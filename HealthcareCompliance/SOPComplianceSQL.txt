@@ -1,0 +1,22 @@
+CREATE DATABASE IF NOT EXISTS SOP_COMPLIANCE;
+
+CREATE TABLE IF NOT EXISTS sop_compliance_results (
+    document_name STRING,
+    section STRING,
+    issue STRING,
+    severity STRING,
+    score INT,
+    ai_response STRING,
+    timestamp TIMESTAMP
+);
+
+
+SELECT CURRENT_ACCOUNT();--to show account name
+
+CREATE STAGE my_stage;--to upload docs
+
+GRANT ROLE SNOWFLAKE.CORTEX_USER TO USER <>;--give your username here
+
+ALTER ACCOUNT SET CORTEX_ENABLED_CROSS_REGION = 'ANY_REGION';
+
+ALTER TABLE sop_compliance_results ADD COLUMN timestamp TIMESTAMP;

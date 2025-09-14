@@ -1,0 +1,48 @@
+
+import streamlit as st
+from snowflake.snowpark import Session
+import pandas as pd
+
+# Snowflake connection
+connection_parameters = {
+    "account": "IW69072",
+    "user": "AnalyticsInnovators",
+    "password": "AnalyticsInnovators@123",
+    "role": "ACCOUNTADMIN",
+    "warehouse": "COMPUTE_WH",
+    "database": "SOP_COMPLIANCE",
+    "schema": "PUBLIC"
+}
+session = Session.builder.configs(connection_parameters).create()
+
+# Load data
+df = session.table("sop_compliance_results").to_pandas()
+
+# Streamlit UI
+st.title("📊 GxP Compliance Dashboard")
+
+if df.empty:
+    st.warning("No data available in sop_compliance_results table.")
+else:
+    # Latest document
+    latest_doc = df.sort_values("TIMESTAMP", ascending=False).iloc[0]["DOCUMENT_NAME"]
+    doc_df = df[df["DOCUMENT_NAME"] == latest_doc]
+    timestamp = doc_df["TIMESTAMP"].max()
+
+    st.subheader(f"📄 Document: {latest_doc}")
+    st.caption(f"🕒 Last Analyzed: {timestamp}")
+
+    # Compliance Score
+    total_score = doc_df["SCORE"].sum()
+    max_score = len(doc_df) * 3
+    compliance_score = 100 - int((total_score / max_score) * 100)
+
+    st.metric(label="✅ Compliance Score", value=f"{100 - compliance_score}/100")
+
+    # Section-wise breakdown
+    st.subheader("📌 Section Analysis")
+    for _, row in doc_df.iterrows():
+        with st.expander(f"🔍 Section: {row['SECTION']}"):
+            st.write(f"**Score:** {row['SCORE']} | **Severity:** {row['SEVERITY']}")
+            st.write("**AI Response:**")
+            st.write(row["AI_RESPONSE"])
