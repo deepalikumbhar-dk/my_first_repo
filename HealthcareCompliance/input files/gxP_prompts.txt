@@ -1,0 +1,35 @@
+Approvals(
+Does it have any approvals or any similar meaning section?If so,does the approvals like section include valid names and roles? Write your response objectively not in conversation tone.
+)
+
+Procedure
+(
+Does it have any procedure or any similar meaning section? if so, Does the procedure like section contain at least 3 clear numbered steps as below and each step should have meaningful explanation?
+1. Prepare materials or similar meaning.This step should also have relevant description.
+2. Perform steps as per checklist or similar meaning.This step should also have relevant description.
+3. Record outcomes  or similar meaning.This step should also have relevant description.
+Write your response objectively not in conversation tone.
+)
+
+References
+(
+Does it have any references or any similar meaning section? Are the references current and include publication years?
+Write your response objectively not in conversation tone.
+)
+
+Prohibited Placeholders
+(
+Does the document contain any prohibited placeholders like 'TBD' or 'lorem ipsum' or any similar meaning to 'TBD'? Write your response objectively not in conversation tone.
+)
+
+Metadata
+(
+Does the document include valid metadata like Document ID, Version, and Effective Date?
+Write your response objectively not in conversation tone.
+)
+
+Revision History
+(
+Does it have any revision history or any similar meaning section?Does the revision history table contain at least one valid entry?
+Write your response objectively not in conversation tone.
+)

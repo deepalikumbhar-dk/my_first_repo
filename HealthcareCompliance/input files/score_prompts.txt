@@ -1,0 +1,36 @@
+Approvals(
+Does the document have any Approvals or similar meaning section?If it does not have or it does not have relevant text in the section like 'TBD' or any unmeaningful text then Severity is Critical. If it has meaningful section but missing some details then Sevirity is 'Major'. 
+If any grammatical errors or the section is phrased differently then Severity 'Minor'. Assigned Score is Severity: 3, Major: 2, Minor 1
+)
+
+Procedure
+(
+Does the document have any Procedure or similar meaning section?If it does not have or it does not have relevant
+ text in the section like 'TBD' or any unmeaningful text then Severity is Critical. If it has meaningful section but missing some details like
+1. Prepare materials or similar meaning.This step should also have relevant explaination.
+2. Perform steps as per checklist or similar meaning.This step should also have relevant explaination.
+3. Record outcomes  or similar meaning.This step should also have relevant explaination.
+then Sevirity is 'Major'. 
+If any grammatical errors or the section is phrased differently then Severity 'Minor'. Assigned Score is Severity: 3, Major: 2, Minor 1 if so, Does the procedure like section contain at least 3 clear numbered steps as below?
+
+Write your response objectively not in conversation tone.
+)
+
+References
+(
+Does the document have any References or similar meaning section?If it does not have or it does not have relevant text in the section like 'TBD' or any unmeaningful text then Severity is Critical. If it has meaningful section but missing some details then Sevirity is 'Major'. 
+If any grammatical errors or the section is phrased differently then Severity 'Minor'. Assigned Score is Severity: 3, Major: 2, Minor 1
+)
+
+
+Metadata
+(
+Does the document have any metadata or similar meaning section?If it does not have or it does not have relevant text in the section like 'TBD' or any unmeaningful text then Severity is Critical. If it has meaningful section but missing some details then Sevirity is 'Major'. 
+If any grammatical errors or the section is phrased differently then Severity 'Minor'. Assigned Score is Severity: 3, Major: 2, Minor 1
+)
+
+Revision History
+(
+Does the document have any Revision History or similar meaning section?If it does not have or it does not have relevant text in the section like 'TBD' or any unmeaningful text then Severity is Critical. If it has meaningful section but missing some details then Sevirity is 'Major'. 
+If any grammatical errors or the section is phrased differently then Severity 'Minor'. Assigned Score is Severity: 3, Major: 2, Minor 1
+)
