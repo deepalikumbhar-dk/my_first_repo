@@ -1,0 +1,9 @@
+streamlit
+google-auth-oauthlib
+google-api-python-client
+python-docx
+PyPDF2
+matplotlib
+python-dotenv
+reportlab
+google-generativeai
