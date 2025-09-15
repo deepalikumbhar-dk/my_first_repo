@@ -19,8 +19,8 @@ It transforms recruitment by automating resume screening, standardization, inter
 
 ### 1. Clone Repository
 ```bash
-git clone https://github.com/your-repo/jadehire.git
-cd jadehire
+git clone https://github.com/deepalikumbhar-dk/my_first_repo.git
+cd my_first_repo/TalentAcquisition
 ```
 
 ### 2. Install Dependencies
@@ -44,7 +44,7 @@ GEMINI_API_KEY=your_gemini_api_key_here
 
 ## 🚀 Running the App
 ```bash
-streamlit run jadehire_app.py
+streamlit run TalentAcquisition_JadeHire.py
 ```
 - First run → prompts Google login → generates `token.pickle`
 - App launches in your browser
@@ -88,12 +88,11 @@ streamlit run jadehire_app.py
 ## 📂 Project Structure
 ```
 jadehire/
-│── jadehire_app.py       # Streamlit unified app (all modules)
-│── client_secret.json    # Google OAuth credentials
-│── .env                  # API keys
-│── requirements.txt      # Python dependencies
-│── README.md             # Documentation
-│── /data                 # Optional resumes / JD samples
+│── TalentAcquisition_JadeHire.py       # Streamlit unified app (all modules)
+│── client_secret_deep_personal.json    # Google OAuth credentials
+│── .env                                # API keys
+│── requirements.txt                    # Python dependencies
+│── README.md                           # Documentation
 ```
 
 ---
