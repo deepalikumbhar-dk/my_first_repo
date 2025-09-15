@@ -89,7 +89,7 @@ streamlit run TalentAcquisition_JadeHire.py
 ```
 jadehire/
 │── TalentAcquisition_JadeHire.py       # Streamlit unified app (all modules)
-│── client_secret_deep_personal.json    # Google OAuth credentials
+│── client_secret_deep_personal.json    # Google OAuth credentials,update based on your file name
 │── .env                                # API keys
 │── requirements.txt                    # Python dependencies
 │── README.md                           # Documentation
